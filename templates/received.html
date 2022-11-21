@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Your message has been sent into the void... {% endblock %}</h1>
+    <form action="{{ url_for('index') }}">
+        <input type="submit" value="Send another message" />
+    </form>
+{% endblock %}

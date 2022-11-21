@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="sender">
+        <h1 class="loader">{% block title %} {{ message }} {% endblock %}
+        <script>
+            function myFunction() {
+            location.replace("{{ url_for('received') }}")
+            }
+        
+            setTimeout(function(){ myFunction(); }, 3000);
+        </script>
+    </div>
+{% endblock %}
