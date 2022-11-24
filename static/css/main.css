@@ -1,3 +1,12 @@
+* {
+    background-color: black;
+    color: grey
+}
+
+.butt {
+    background-color: rgb(107, 59, 59);
+}
+
 .loader {
     text-align: center;
     border-radius: 50%;
@@ -7,8 +16,8 @@
   }
   
   @keyframes spin {
-    0% { transform: rotate(0deg); background-color:white; left:0px; top:0px; scale:25;}
-    100% { transform: rotate(360deg); background-color:white; left:200px; top:0px; scale:0;}
+    0% { transform: rotate(0deg); left:0px; top:0px; scale:25;}
+    100% { transform: rotate(360deg); left:200px; top:0px; scale:0;}
   }
 
 .sender {
